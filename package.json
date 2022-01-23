@@ -1,6 +1,6 @@
 {
   "name": "webpack-extension-reloader",
-  "version": "1.1.4",
+  "version": "1.0.0",
   "private": false,
   "description": "Watch for changes and force the reload of the browser extension",
   "main": "dist/webpack-extension-reloader.js",
@@ -8,7 +8,7 @@
   "types": "typings/webpack-extension-reloader.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rubenspgcavalcante/webpack-extension-reloader.git"
+    "url": "git://github.com/obender/webpack-extension-reloader-v3-manifest.git"
   },
   "husky": {
     "hooks": {
@@ -35,19 +35,20 @@
     "lint:files": "tslint --fix --format codeFrame",
     "format:files": "prettier --write"
   },
-  "author": "Chen Osipov ",
+  "author": "Chen Osipov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rubenspgcavalcante/webpack-extension-reloader/issues"
+    "url": "https://github.com/obender/webpack-extension-reloader-v3-manifest/issues"
   },
-  "homepage": "https://github.com/rubenspgcavalcante/webpack-extension-reloader#readme",
+  "homepage": "https://github.com/obender/webpack-extension-reloader-v3-manifest#readme",
   "keywords": [
     "webpack",
     "plugin",
     "browser",
     "extension",
     "WebExtensions",
-    "hot-reload"
+    "hot-reload",
+    "v3-manifest"
   ],
   "dependencies": {
     "@types/webpack": "^4.39.8",
