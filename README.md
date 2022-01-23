@@ -18,12 +18,12 @@ A Webpack plugin to automatically reload browser extensions during development.
 
 npm
 ```bash
-npm install webpack-extension-reloader --save-dev
+npm install webpack-extension-reloader-v3-manifest --save-dev
 ```
 
 yarn 
 ```bash
-yarn add webpack-extension-reloader --dev
+yarn add webpack-extension-reloader-v3-manifest --dev
 ```
 
 ## Solution for ...
@@ -43,10 +43,10 @@ Check out [Hot reloading extensions using Webpack](https://medium.com/front-end-
 
 ## How to use
 ### Using as a plugin
-Add `webpack-extension-reloader` to the plugins section of your webpack configuration file. Note that this plugin don't outputs the manifest (at most read it to gather information).
+Add `webpack-extension-reloader-v3-manifest` to the plugins section of your webpack configuration file. Note that this plugin don't outputs the manifest (at most read it to gather information).
 For outputing not only the `manifest.json` but other static files too, use `CopyWebpackPlugin`.
 ```js
-const ExtensionReloader  = require('webpack-extension-reloader');
+const ExtensionReloader  = require('webpack-extension-reloader-v3-manifest');
 
 plugins: [
   new ExtensionReloader(),
@@ -135,16 +135,16 @@ If you don't want all the plugin setup, you can just use the client that comes w
 You can use by installing the package globally, or directly using `npx`:
 
 ```bash
-npx webpack-extension-reloader
+npx webpack-extension-reloader-v3-manifest
 ```
 If you run directly, it will use the  default configurations, but if you want to customize
 you can call it with the following options:
 ```bash
-npx webpack-extension-reloader --config wb.config.js --port 9080 --no-page-reload --content-script my-content.js --background bg.js --extension-page popup.js
+npx webpack-extension-reloader-v3-manifest --config wb.config.js --port 9080 --no-page-reload --content-script my-content.js --background bg.js --extension-page popup.js
 ```
 If you have **multiple** content scripts or extension pages, just use comma (with no spaces) while passing the option
 ```bash
-npx webpack-extension-reloader --content-script my-first-content.js,my-second-content.js,my-third-content.js --extension-page popup.js,options.js
+npx webpack-extension-reloader-v3-manifest --content-script my-first-content.js,my-second-content.js,my-third-content.js --extension-page popup.js,options.js
 ```
 
 ### Client options
