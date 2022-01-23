@@ -35,7 +35,7 @@
     "lint:files": "tslint --fix --format codeFrame",
     "format:files": "prettier --write"
   },
-  "author": "Rubens Pinheiro Gonçalves Cavalcante",
+  "author": "Chen Osipov ",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rubenspgcavalcante/webpack-extension-reloader/issues"
